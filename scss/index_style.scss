@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
 
 $fontStyle: 'Oswald';
-$fontSize: 20px;
+$fontSize: 21px;
+$fontSize_title: 30px;
+$fontSize_description: 24px;
 
 * {
   box-sizing: border-box;
@@ -10,16 +12,52 @@ $fontSize: 20px;
 }
 
 body {
-  background-color: darkgray;
+  background-color: #BABEBF;
   font-family: $fontStyle, sans-serif;
   font-size: $fontSize;
+}
+
+div.container {
+  background-color: white;
+  text-align: center;
+  padding: 0;
+}
+
+div.container img{
+  margin: 0;
+  padding: 0;
+}
+
+div#background_image_index {
+  background-image: url("../assets/Indexpagina_badkamer_background_klein.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 881px;
+  width: 1320px;
 }
 
 div#navbar {
   display: flex;
   text-align: center;
+  background-color: #D2D7D9;
+  height: 100px;
+}
+
+div#navbar img {
+  margin-left: 10px;
+  margin-top: 2px;
+}
+
+div#navbar div#title {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+div#over_ons {
   background-color: white;
-  height: 178px;
 }
 
 nav ul{
@@ -33,12 +71,39 @@ nav ul li {
   list-style: none;
   height: 100px;
   width: 100px;
-  border: 1px solid #000;
   display: flex;
   line-height: 100px;
 }
 
 nav ul li a {
   text-decoration: none;
+  color: #3B3C40;
   flex: 1 1 auto;
+  font-weight: bold;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.25s;
+}
+
+nav ul li a.active{
+  color: #A61F1F;
+}
+
+nav ul li:hover a {
+  background-color: #BABEBF;
+  color: inherit;
+  border-radius: 25%;
+}
+
+nav ul li:hover a.active {
+  color: #A61F1F;
+}
+
+.title {
+  color: #A61F1F;
+  font-weight: bold;
+  font-size: $fontSize_title;
+}
+
+.description {
+  font-size: $fontSize_description;
 }
