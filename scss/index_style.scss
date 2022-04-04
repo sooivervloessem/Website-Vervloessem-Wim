@@ -11,10 +11,18 @@ $fontSize_description: 24px;
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #BABEBF;
   font-family: $fontStyle, sans-serif;
   font-size: $fontSize;
+}
+
+h5 {
+  font-size: $fontSize_description;
 }
 
 div.container {
@@ -56,8 +64,9 @@ div#navbar div#title {
   margin-top: 10px;
 }
 
-div#over_ons {
+div#onze_diensten {
   background-color: white;
+  margin-top: 20px;
 }
 
 nav ul{
@@ -107,3 +116,47 @@ nav ul li:hover a.active {
 .description {
   font-size: $fontSize_description;
 }
+
+#afspraak_button_div {
+  height: 781px;
+  line-height: 700px;
+}
+
+.afspraak_button {
+  background-color: #A62121;
+  color: #F2F2F2;
+  border-color: #801919;
+  font-size: 30px;
+}
+
+.afspraak_button_card {
+  background-color: #A62121;
+  color: #F2F2F2;
+  border-color: #801919;
+  font-size: 20px;
+  width: 100%;
+}
+
+.afspraak_button:hover {
+  background-color: #801919;
+  border-color: #801919;
+  color: #F2F2F2;
+}
+
+.afspraak_button_card:hover {
+  background-color: #801919;
+  border-color: #801919;
+  color: #F2F2F2;
+}
+
+.card {
+  padding: 0;
+  margin-top: 10px;
+}
+
+.card img {
+  width: 100%;
+  height: 300px;
+  flex-grow: 1;
+}
+
