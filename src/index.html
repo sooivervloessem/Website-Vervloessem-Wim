@@ -11,13 +11,13 @@
         <div class="container">
             <div id="background_image_index" class="container-fluid">
                 <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
-                    <div class="container-fluid">
-                        <a class="navbar-brand" href="#"><img src="assets/Logo%20papa%20transparent.png" alt="Logo" width="82" height="100"></a>
+                    <div class="container-fluid" id="navbar_container">
+                        <a class="navbar-brand d-none d-lg-inline" href="#"><img src="assets/Logo%20papa%20transparent.png" alt="Logo" width="82" height="100"></a>
                         <div id="title">
-                            <h1 class="title">Wim Vervloessem</h1>
+                            <h1 class="title d-none d-lg-block">Wim Vervloessem</h1>
                             <h2 class="description d-none d-lg-inline">Centrale verwarming / Sanitair</h2>
                         </div>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        <button id="menu_button" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
@@ -55,6 +55,9 @@
                 </nav>
                 <div id="afspraak_button_div" class="d-none d-lg-block">
                     <button type="button" class="btn btn-primary btn-lg afspraak_button">Maak uw afspraak</button>
+                </div>
+                <div id="phone_view_div" class="d-block d-lg-none">
+                    <img src="assets/Logo%20papa%20transparent.png" alt="Logo">
                 </div>
             </div>
             <div class="container-fluid">

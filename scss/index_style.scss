@@ -109,6 +109,43 @@ nav ul li:hover a.active {
   color: #A61F1F;
 }
 
+#navbarNavSmall {
+  margin-bottom: 0rem;
+}
+
+#navbarNavSmall li {
+  list-style: none;
+  height: 100px;
+  display: flex;
+  line-height: 100px;
+  flex-grow: 1;
+  width: 75%;
+  border-radius: 0%;
+}
+
+#navbarNavSmall li a {
+  text-decoration: none;
+  color: white;
+  flex: 1 1 auto;
+  font-weight: normal;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.25s;
+}
+
+#navbarNavSmall li a.active{
+  color: white;
+}
+
+#navbarNavSmall li:hover a {
+  background-color: #A62121;
+  color: white;
+  border-radius: 0%;
+}
+
+#navbarNavSmall li:hover a.active {
+  color: white;
+}
+
 .title {
   color: #A61F1F;
   font-weight: bold;
@@ -132,9 +169,23 @@ nav ul li:hover a.active {
   flex-grow: 1;
 }
 
+#navbar_container {
+  padding: 0;
+  text-align: center;
+}
+
 #afspraak_button_div {
   height: 781px;
   line-height: 700px;
+}
+
+#phone_view_div {
+  align-items: center;
+}
+
+#phone_view_div img {
+  width: 50%;
+  height: auto;
 }
 
 .afspraak_button {
