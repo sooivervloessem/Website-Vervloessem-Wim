@@ -39,16 +39,18 @@ div.container img{
 div#background_image_index {
   background-image: url("../assets/Indexpagina_badkamer_background_klein.jpg");
   background-repeat: no-repeat;
-  background-size: contain;
-  height: 881px;
-  width: 1320px;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  padding: 0;
 }
 
-div#navbar {
+#navbar {
   display: flex;
   text-align: center;
   background-color: #D2D7D9;
   height: 100px;
+  padding: 0;
 }
 
 div#navbar img {
@@ -117,6 +119,19 @@ nav ul li:hover a.active {
   font-size: $fontSize_description;
 }
 
+.navbar-brand {
+  padding: 0;
+}
+
+#navbarNavSmall {
+  align-items: center;
+  background-color: red;
+}
+
+#navbarNavSmall ul li {
+  flex-grow: 1;
+}
+
 #afspraak_button_div {
   height: 781px;
   line-height: 700px;
@@ -159,4 +174,3 @@ nav ul li:hover a.active {
   height: 300px;
   flex-grow: 1;
 }
-
