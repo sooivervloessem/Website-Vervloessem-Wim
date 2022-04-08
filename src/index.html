@@ -8,10 +8,10 @@
         <title>Vervloessem Wim</title>
     </head>
     <body>
-        <div class="container">
+        <div class="container-fluid">
             <div id="background_image_index" class="container-fluid">
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                    <div class="container-fluid justify-content-center p-0">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light gray_background">
+                    <div class="container-fluid justify-content-center p-0 gray_background">
                         <a class="navbar-brand d-none d-lg-inline" href="#">
                             <img src="assets/Logo%20papa%20transparent.png" alt="Logo" width="82" height="100">
                         </a>
@@ -35,7 +35,7 @@
                                     <a class="nav-link" href="#onze_diensten">Onze diensten</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Realisaties</a>
+                                    <a class="nav-link" href="#realisaties">Realisaties</a>
                                 </li>
                             </ul>
                         </div>
@@ -48,76 +48,97 @@
                     <img src="assets/Logo%20papa%20transparent.png" alt="Logo">
                 </div>
             </div>
-            <div class="container-fluid">
-                <div id="onze_diensten" class="row justify-content-evenly">
-                    <h2 class="col-12">Onze diensten</h2>
-                    <div class="card col-12 col-lg-4" style="width: 25rem;">
-                        <img src="assets/gascondentatieketel.png" class="card-img-top" alt="gascondentatieketel">
-                        <div class="card-body">
-                            <h5 class="card-title">Centrale Verwarming</h5>
-                            <a href="#" class="btn btn-primary afspraak_button_card">Maak uw afspraak</a>
-                        </div>
-                    </div>
-                    <div class="card col-12 col-lg-4" style="width: 25rem;">
-                        <img src="assets/Badkamer.jpg" class="card-img-top" alt="badkamer">
-                        <div class="card-body">
-                            <h5 class="card-title">Sanitair</h5>
-                            <a href="#" class="btn btn-primary afspraak_button_card">Maak uw afspraak</a>
-                        </div>
-                    </div>
-                    <div class="card col-12 col-lg-4" style="width: 25rem;">
-                        <img src="assets/vloerverwarming.png" class="card-img-top" alt="vloerverwarming">
-                        <div class="card-body">
-                            <h5 class="card-title">Vloerverwarming</h5>
-                            <a href="#" class="btn btn-primary afspraak_button_card">Maak uw afspraak</a>
-                        </div>
-                    </div>
-                    <div class="card col-12 col-lg-4" style="width: 25rem;">
-                        <img src="assets/Warmtepomp%20Bi%20Block.png" class="card-img-top" alt="warmtepomp">
-                        <div class="card-body">
-                            <h5 class="card-title">Warmtepompen</h5>
-                            <a href="#" class="btn btn-primary afspraak_button_card">Maak uw afspraak</a>
-                        </div>
-                    </div>
-                    <div class="card col-12 col-lg-4" style="width: 25rem;">
-                        <img src="assets/Warmtepomp%20Bi%20Block.png" class="card-img-top" alt="warmtepomp">
-                        <div class="card-body">
-                            <h5 class="card-title">Placeholder</h5>
-                            <a href="#" class="btn btn-primary afspraak_button_card">Maak uw afspraak</a>
-                        </div>
-                    </div>
-                    <div class="card col-12 col-lg-4" style="width: 25rem;">
-                        <img src="assets/Warmtepomp%20Bi%20Block.png" class="card-img-top" alt="warmtepomp">
-                        <div class="card-body">
-                            <h5 class="card-title">Placeholder</h5>
-                            <a href="#" class="btn btn-primary afspraak_button_card">Maak uw afspraak</a>
-                        </div>
-                    </div>
-                    <h4 class="pt-5 pb-5">Laat ons nog even al onze services voor u oplijsten</h4>
-                    <div class="col-12" id="services">
-                        <ul class="fa-ul">
-                            <li><span class="fa-li"><i class="fa-solid fa-circle-check"></i></span>Centrale verwarming / Sanitair</li>
-                            <li><span class="fa-li"><i class="fa-solid fa-circle-check"></i></span>Onderhoud en herstelling</li>
-                            <li><span class="fa-li"><i class="fa-solid fa-circle-check"></i></span>Nieuwbouw en renovatie</li>
-                            <li><span class="fa-li"><i class="fa-solid fa-circle-check"></i></span>Hernieuwbare energie</li>
-                            <li><span class="fa-li"><i class="fa-solid fa-circle-check"></i></span>Plaatsen van regenwaterinstallaties</li>
-                            <li><span class="fa-li"><i class="fa-solid fa-circle-check"></i></span>Afvoerleidingen / Waterleidingen</li>
-                            <li><span class="fa-li"><i class="fa-solid fa-circle-check"></i></span>Plaatsing en keuring van gasleidingen
-                            </li>
-                            <li><span class="fa-li"><i class="fa-solid fa-circle-check"></i></span>Water behandeling / Ontkalker</li>
-                            <li><span class="fa-li"><i class="fa-solid fa-circle-check"></i></span>Zelfbouwpakketten met advies &
-                                ondersteuning op werf
-                            </li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h5 class="pt-5 mt-5" id="recensie">Paul T.</h5>
-                        <p class="recensie_tekst pb-0 mb-0">Zeer stipt en hoge kwaliteit.</p>
-                        <p class="recensie_ster pt-0 mt-0"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+
+            <div id="onze_diensten" class="row justify-content-evenly">
+                <h2 class="col-12">Onze diensten</h2>
+                <div class="card col-12 col-lg-4" style="width: 25rem;">
+                    <img src="assets/gascondentatieketel.png" class="card-img-top" alt="gascondentatieketel">
+                    <div class="card-body">
+                        <h5 class="card-title">Centrale Verwarming</h5>
+                        <a href="#" class="btn btn-primary afspraak_button_card">Maak uw afspraak</a>
                     </div>
                 </div>
+                <div class="card col-12 col-lg-4" style="width: 25rem;">
+                    <img src="assets/Badkamer.jpg" class="card-img-top" alt="badkamer">
+                    <div class="card-body">
+                        <h5 class="card-title">Sanitair</h5>
+                        <a href="#" class="btn btn-primary afspraak_button_card">Maak uw afspraak</a>
+                    </div>
+                </div>
+                <div class="card col-12 col-lg-4" style="width: 25rem;">
+                    <img src="assets/vloerverwarming.png" class="card-img-top" alt="vloerverwarming">
+                    <div class="card-body">
+                        <h5 class="card-title">Vloerverwarming</h5>
+                        <a href="#" class="btn btn-primary afspraak_button_card">Maak uw afspraak</a>
+                    </div>
+                </div>
+                <div class="card col-12 col-lg-4" style="width: 25rem;">
+                    <img src="assets/Warmtepomp%20Bi%20Block.png" class="card-img-top" alt="warmtepomp">
+                    <div class="card-body">
+                        <h5 class="card-title">Warmtepompen</h5>
+                        <a href="#" class="btn btn-primary afspraak_button_card">Maak uw afspraak</a>
+                    </div>
+                </div>
+                <div class="card col-12 col-lg-4" style="width: 25rem;">
+                    <img src="assets/Warmtepomp%20Bi%20Block.png" class="card-img-top" alt="warmtepomp">
+                    <div class="card-body">
+                        <h5 class="card-title">Placeholder</h5>
+                        <a href="#" class="btn btn-primary afspraak_button_card">Maak uw afspraak</a>
+                    </div>
+                </div>
+                <div class="card col-12 col-lg-4" style="width: 25rem;">
+                    <img src="assets/Warmtepomp%20Bi%20Block.png" class="card-img-top" alt="warmtepomp">
+                    <div class="card-body">
+                        <h5 class="card-title">Placeholder</h5>
+                        <a href="#" class="btn btn-primary afspraak_button_card">Maak uw afspraak</a>
+                    </div>
+                </div>
+                <h4 class="pt-5 pb-5">We lijsten nog even al onze services voor u op.</h4>
+                <div class="col-12 px-4" id="services">
+                    <div class="row justify-content-around">
+                        <p class="col-12 col-md-6 col-lg-4"><i class="fa-solid fa-circle-check"></i> Centrale
+                            verwarming / Sanitair
+                        </p>
+                        <p class="col-12 col-md-6 col-lg-4"><i class="fa-solid fa-circle-check"></i> Onderhoud
+                            en herstelling
+                        </p>
+                        <p class="col-12 col-md-6 col-lg-4"><i class="fa-solid fa-circle-check"></i> Nieuwbouw
+                            en renovatie
+                        </p>
+                        <p class="col-12 col-md-6 col-lg-4"><i class="fa-solid fa-circle-check"></i> Hernieuwbare
+                            energie
+                        </p>
+                        <p class="col-12 col-md-6 col-lg-4"><i class="fa-solid fa-circle-check"></i> Plaatsen
+                            van regenwaterinstallaties
+                        </p>
+                        <p class="col-12 col-md-6 col-lg-4"><i class="fa-solid fa-circle-check"></i> Afvoerleidingen
+                            / Waterleidingen
+                        </p>
+                        <p class="col-12 col-md-6 col-lg-4"><i class="fa-solid fa-circle-check"></i> Plaatsing
+                            en keuring van gasleidingen
+                        </p>
+                        <p class="col-12 col-md-6 col-lg-4"><i class="fa-solid fa-circle-check"></i> Water
+                            behandeling / Ontkalker
+                        </p>
+                        <p class="col-12 col-md-12 col-lg-4"><i class="fa-solid fa-circle-check"></i> Zelfbouwpakketten
+                            met advies &
+                            ondersteuning op werf
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <h5 class="pt-5 mt-5" id="recensie">Paul T.</h5>
+                    <p class="recensie_tekst pb-0 mb-0">Zeer stipt en hoge kwaliteit.</p>
+                    <p class="recensie_ster pt-0 mt-0"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                        class="fa-solid fa-star"></i><i
+                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                </div>
             </div>
+            <div id="realisaties" class="pt-5 mt-2 row justify-content-center">
+                <h2 class="col-12">Realisaties</h2>
+
+            </div>
+
         </div>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
     </body>

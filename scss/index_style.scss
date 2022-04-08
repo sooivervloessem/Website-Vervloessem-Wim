@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css");
 
 $fontStyle: 'Oswald';
 $fontSize: 21px;
@@ -27,13 +28,21 @@ h5 {
   font-size: $fontSize_description;
 }
 
-div.container {
-  background-color: white;
+div.container-fluid {
   text-align: center;
   padding: 0;
+  background-color: white;
 }
 
-div.container img{
+div.container-fluid nav {
+  background-color: #D2D7D9;
+}
+
+div.container-fluid .gray_background {
+  background-color: #D2D7D9;
+}
+
+div.container-fluid img{
   margin: 0;
   padding: 0;
 }
@@ -59,10 +68,10 @@ div#navbar img {
   margin-top: 2px;
 }
 
-div#navbar div#title {
+div#title {
   display: flex;
   flex-direction: column;
-  text-align: start;
+  text-align: center;
   margin-left: 20px;
   margin-top: 10px;
 }
@@ -107,6 +116,10 @@ div#onze_diensten {
 
 #navbarNavSmall li:hover a.active {
   color: white;
+}
+
+.gray_background {
+  background-color: #D2D7D9;
 }
 
 .title {
@@ -164,6 +177,10 @@ div#onze_diensten {
 
 #services i {
   color: #A62121;
+}
+
+#services div p {
+
 }
 
 #recensie {
