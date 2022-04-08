@@ -4,6 +4,8 @@ $fontStyle: 'Oswald';
 $fontSize: 21px;
 $fontSize_title: 30px;
 $fontSize_description: 24px;
+$fontSize_services: 20px;
+$fontSize_recensie: 40px;
 
 * {
   box-sizing: border-box;
@@ -40,6 +42,7 @@ div#background_image_index {
   background-image: url("../assets/Indexpagina_badkamer_background_klein.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   width: 100%;
   height: auto;
   padding: 0;
@@ -120,6 +123,16 @@ div#onze_diensten {
   padding: 0;
 }
 
+.recensie_tekst {
+  font-size: $fontSize_recensie;
+  color: rgba(0,0,0,0.50);
+}
+
+.recensie_ster {
+  font-size: $fontSize_recensie;
+  color: #801919;
+}
+
 #navbarNavSmall {
   align-items: center;
   background-color: red;
@@ -144,14 +157,27 @@ div#onze_diensten {
   height: auto;
 }
 
-.afspraak_button {
+#services {
+  text-align: start;
+  font-size: $fontSize_services;
+}
+
+#services i {
+  color: #A62121;
+}
+
+#recensie {
+  font-size: $fontSize_description;
+}
+
+.afspraak_button, .afspraak_button:active {
   background-color: #A62121;
   color: #F2F2F2;
   border-color: #801919;
   font-size: 30px;
 }
 
-.afspraak_button_card {
+.afspraak_button_card, .afspraak_button_card:active {
   background-color: #A62121;
   color: #F2F2F2;
   border-color: #801919;
@@ -159,16 +185,18 @@ div#onze_diensten {
   width: 100%;
 }
 
-.afspraak_button:hover {
+.afspraak_button:hover, .afspraak_button:focus {
   background-color: #801919;
   border-color: #801919;
   color: #F2F2F2;
+  box-shadow: 0px 0px 0px black;
 }
 
-.afspraak_button_card:hover {
+.afspraak_button_card:hover, .afspraak_button_card:focus {
   background-color: #801919;
   border-color: #801919;
   color: #F2F2F2;
+  box-shadow: 0px 0px 0px black;
 }
 
 .card {
@@ -181,6 +209,11 @@ div#onze_diensten {
   height: 300px;
   flex-grow: 1;
 }
+
+
+
+
+
 
 @media screen and (min-width:992px){
 
