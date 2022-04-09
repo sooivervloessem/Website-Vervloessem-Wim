@@ -77,6 +77,10 @@ div#title {
   margin-top: 10px;
 }
 
+#menu_button span {
+  color: black;
+}
+
 div#onze_diensten {
   background-color: white;
   margin-top: 20px;
@@ -84,6 +88,9 @@ div#onze_diensten {
 
 #navbarNavSmall {
   margin-bottom: 0rem;
+  align-items: center;
+  background-color: #A62121;
+  margin-top: 5px;
 }
 
 #navbarNavSmall li {
@@ -110,47 +117,13 @@ div#onze_diensten {
 }
 
 #navbarNavSmall li:hover a {
-  background-color: #A62121;
+  background-color: #801919;
   color: white;
   border-radius: 0;
 }
 
 #navbarNavSmall li:hover a.active {
   color: white;
-}
-
-.gray_background {
-  background-color: white;
-}
-
-.title {
-  color: #A61F1F;
-  font-weight: bold;
-  font-size: $fontSize_title;
-}
-
-.description {
-  font-size: $fontSize_description;
-}
-
-.navbar-brand {
-  padding: 0;
-}
-
-.recensie_tekst {
-  font-size: $fontSize_recensie;
-  color: rgba(0,0,0,0.50);
-}
-
-.recensie_ster {
-  font-size: $fontSize_recensie;
-  color: #801919;
-}
-
-#navbarNavSmall {
-  align-items: center;
-  background-color: red;
-  margin-top: 5px;
 }
 
 #navbarNavSmall ul li {
@@ -186,6 +159,34 @@ div#onze_diensten {
 
 #recensie {
   font-size: $fontSize_description;
+}
+
+.gray_background {
+  background-color: white;
+}
+
+.title {
+  color: #A61F1F;
+  font-weight: bold;
+  font-size: $fontSize_title;
+}
+
+.description {
+  font-size: $fontSize_description;
+}
+
+.navbar-brand {
+  padding: 0;
+}
+
+.recensie_tekst {
+  font-size: $fontSize_recensie;
+  color: rgba(0,0,0,0.50);
+}
+
+.recensie_ster {
+  font-size: $fontSize_recensie;
+  color: #801919;
 }
 
 .afspraak_button, .afspraak_button:active {
