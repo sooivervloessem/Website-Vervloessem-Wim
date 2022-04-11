@@ -52,12 +52,6 @@ div.container-fluid img{
   padding: 0;
 }
 
-div#background_image_index {
-  width: 100%;
-  height: auto;
-  padding: 0;
-}
-
 #navbar {
   background-color: #D2D7D9;
   height: 100px;
@@ -134,46 +128,17 @@ div#onze_diensten {
   transition: 0.75s ease;
 }
 
-#afspraak_button_div {
-  height: 781px;
-  line-height: 700px;
-}
-
-#phone_view_div {
-  align-items: center;
-  background-image: url("../assets/Smallscreen_foto_indexpagina.jpg");
-  background-size: cover;
-  background-position: bottom center;
+#algemene_voorwaarden_div {
+  background-image: url("../assets/algemene_voorwaardenpagina_badkamer_background.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
   background-attachment: scroll;
   width: 100%;
-  height: auto;
+  min-height: 200px;
 }
 
-#phone_view_div img {
-  height: auto;
-}
-
-#services {
-  text-align: center;
-  font-size: $fontSize_services;
-}
-
-#services i {
-  color: #A62121;
-}
-
-#services div {
+#algemene_voorwaarden_uitleg {
   text-align: start;
-}
-
-#recensie {
-  font-size: $fontSize_description;
-}
-
-#realisaties div figure img {
-  width: 100%;
-  height: auto;
 }
 
 .gray_background {
@@ -194,60 +159,6 @@ div#onze_diensten {
   padding: 0;
 }
 
-.recensie_tekst {
-  font-size: $fontSize_recensie;
-  color: rgba(0,0,0,0.50);
-}
-
-.recensie_ster {
-  font-size: $fontSize_recensie;
-  color: #801919;
-}
-
-.afspraak_button, .afspraak_button:active {
-  background-color: #A62121;
-  color: #F2F2F2;
-  border-color: #801919;
-  font-size: 30px;
-}
-
-.afspraak_button_card, .afspraak_button_card:active {
-  background-color: #A62121;
-  color: #F2F2F2;
-  border-color: #801919;
-  font-size: 20px;
-  width: 100%;
-}
-
-.afspraak_button:hover, .afspraak_button:focus {
-  background-color: #801919;
-  border-color: #801919;
-  color: #F2F2F2;
-  box-shadow: 0px 0px 0px black;
-}
-
-.afspraak_button_card:hover, .afspraak_button_card:focus {
-  background-color: #801919;
-  border-color: #801919;
-  color: #F2F2F2;
-  box-shadow: 0px 0px 0px black;
-}
-
-.afspraak_button_small {
-  font-size: 24px;
-}
-
-.card {
-  padding: 0;
-  margin-top: 10px;
-}
-
-.card img {
-  width: 100%;
-  height: auto;
-  flex-grow: 1;
-}
-
 footer {
   text-align: center;
 }
@@ -266,14 +177,6 @@ footer a:hover {
 }
 
 @media screen and (min-width:992px){
-
-  div#background_image_index {
-    background-image: url("../assets/Indexpagina_badkamer_background_klein.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-  }
-
 
   div.container-fluid .gray_background {
     background-color: #D2D7D9;
