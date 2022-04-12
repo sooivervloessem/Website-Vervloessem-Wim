@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style_contact.css" />
+        <title>Wim Vervloessem | Contact</title>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light gray_background">
+                <div class="container-fluid justify-content-center p-0 gray_background">
+                    <a class="navbar-brand d-none d-lg-inline" href="index.html">
+                        <img src="assets/Logo%20papa%20transparent.png" alt="Logo" width="82" height="100">
+                    </a>
+                    <div id="title">
+                        <h1 class="title d-none d-lg-block">Wim Vervloessem</h1>
+                        <h2 class="description d-none d-lg-inline">Centrale verwarming / Sanitair</h2>
+                    </div>
+                    <button id="menu_button" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent"
+                            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span><span> menu</span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center" id="navbarNavSmall">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html#onze_diensten">Onze diensten</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html#realisaties">Realisaties</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div id="contact_div"></div>
+            <div id="contact_div_uitleg" class="row">
+                <div id="contactformulier" class="col-12 col-lg-6">
+                    <h1>Contactformulier</h1>
+                    <div class="align_start_this">
+                        <form action="https://it-fact.be/form.php" method="post" class="ms-3">
+
+                            <div class="mb-3">
+                                <label for="naam" class="">Naam *</label>
+                                <input type="text" class="form-control" id="naam" name="naam" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="email" class="">Email *</label>
+                                <input type="email" class="form-control" id="email" name="email"
+                                       required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="adres" class="float-label">Adres *</label>
+                                <input type="text" class="form-control" id="adres" name="adres"
+                                       required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="float-label" for="tel">Telefoonnummer *</label>
+                                <input type="tel" class="form-control" id="tel"
+                                       name="telefoonnummer" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="bericht">Bericht *</label>
+                                <textarea class="form-control" placeholder="Schrijf uw bericht hier" id="bericht" style="height: 100px" name="bericht"
+                                          required></textarea>
+                            </div>
+
+                            <p class="center_this">Door op verstuur te klikken geeft u toestemming om uw gegevens intern te verwerken</p>
+
+                            <div class="d-flex my-1">
+                                <button id="submit_button_form" type="submit" class="btn btn-primary flex-grow-1">Verstuur</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div id="bedrijfsinformatie" class="col-12 col-lg-6"><h1>Bedrijfsinformatie</h1></div>
+            </div>
+
+            <footer class="row justify-content-center mt-5 pb-4">
+                <div class="container-xxl row">
+                    <div class="col-12 col-lg-4">
+                        <p class="py-0 my-0"><a class="" href="tel:0494712045"><i class="fa-solid fa-phone"></i> 0494 71 20 45</a></p>
+                        <p class="py-0 my-0"><a class="" href="mailto:wim.vervloessem@telenet.be"><i class="fa-solid fa-envelope"></i>
+                            wim.vervloessem@telenet.be</a></p>
+                        <p class="py-0 my-0"><i class="fa-solid fa-map-location-dot"></i> Veldstraat 46 E 3130 Begijnendijk</p>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <p class="py-0 my-0">Eenmanszaak</p>
+                        <p class="py-0 my-0">BTW-Nummer: BE0809 976 427</p>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <p class="py-0 my-0">Sitemap</p>
+                        <p class="py-0 my-0"><a href="#">Algemene voorwaarden</a></p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

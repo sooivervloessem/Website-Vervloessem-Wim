@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css");
+
+$fontStyle: 'Oswald';
+$fontSize: 21px;
+$fontSize_title: 30px;
+$fontSize_description: 24px;
+$fontSize_services: 20px;
+$fontSize_recensie: 40px;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #BABEBF;
+  font-family: $fontStyle, sans-serif;
+  font-size: $fontSize;
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+h5 {
+  font-size: $fontSize_description;
+}
+
+div.container-fluid {
+  text-align: center;
+  padding: 0;
+  background-color: white;
+}
+
+div.container-fluid nav {
+  background-color: #D2D7D9;
+}
+
+div.container-fluid .gray_background {
+  background-color: white;
+}
+
+div.container-fluid img{
+  margin: 0;
+  padding: 0;
+}
+
+#navbar {
+  background-color: #D2D7D9;
+  height: 100px;
+  padding: 0;
+}
+
+div#navbar img {
+  margin-left: 10px;
+  margin-top: 2px;
+}
+
+div#title {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-left: 0px;
+  margin-top: 10px;
+}
+
+#menu_button span {
+  color: black;
+}
+
+div#onze_diensten {
+  background-color: white;
+  margin-top: 20px;
+}
+
+#navbarNavSmall {
+  margin-bottom: 0rem;
+  align-items: center;
+  background-color: #A62121;
+  margin-top: 5px;
+}
+
+#navbarNavSmall li {
+  list-style: none;
+  height: 100px;
+  display: flex;
+  line-height: 100px;
+  flex-grow: 1;
+  width: 75%;
+  border-radius: 0;
+}
+
+#navbarNavSmall li a {
+  text-decoration: none;
+  color: white;
+  flex: 1 1 auto;
+  font-weight: normal;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.25s;
+}
+
+#navbarNavSmall li a.active{
+  color: white;
+}
+
+#navbarNavSmall li:hover a {
+  background-color: #801919;
+  color: white;
+  border-radius: 0;
+}
+
+#navbarNavSmall li:hover a.active {
+  color: white;
+}
+
+#navbarNavSmall ul li {
+  flex-grow: 1;
+}
+
+#navbarSupportedContent {
+  transition: 0.75s ease;
+}
+
+#contact_div {
+  background-image: url("../assets/algemene_voorwaardenpagina_badkamer_background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  background-position: center;
+  width: 100%;
+  min-height: 200px;
+}
+
+#submit_button_form,  #submit_button_form:active{
+  background-color: #A61F1F;
+  color: white;
+  font-size: 20px;
+  border-color: #801919;
+}
+
+#submit_button_form:hover, #submit_button_form:active, #submit_button_form:focus, #submit_button_form:active:focus {
+  background-color: #801919;
+  color: white;
+  border-color: #801919;
+}
+
+.align_start_this {
+  text-align: start;
+}
+
+.center_this {
+  text-align: center;
+}
+
+.gray_background {
+  background-color: white;
+}
+
+.title {
+  color: #A61F1F;
+  font-weight: bold;
+  font-size: $fontSize_title;
+}
+
+.description {
+  font-size: $fontSize_description;
+}
+
+.navbar-brand {
+  padding: 0;
+}
+
+footer {
+  text-align: center;
+}
+
+footer i {
+  color: #801919;
+}
+
+footer a {
+  color: black;
+}
+
+footer a:hover {
+  color: black;
+  font-weight: bold;
+}
+
+@media screen and (min-width:992px){
+
+  div.container-fluid .gray_background {
+    background-color: #D2D7D9;
+  }
+
+  nav div {
+    background-color: #D2D7D9;
+  }
+
+  #navbarNavSmall {
+    display: flex;
+    justify-content: space-around;
+    flex: 1 1 auto;
+    margin-bottom: 0rem;
+    background-color: #D2D7D9;
+    margin-top: 0px;
+  }
+
+  #navbarNavSmall li {
+    list-style: none;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    line-height: 100px;
+    flex-grow: 0;
+  }
+
+  #navbarNavSmall li a {
+    padding: 0;
+    text-decoration: none;
+    color: #3B3C40;
+    flex: 1 1 auto;
+    font-weight: bold;
+    transition: all 0.25s ease-in-out;
+  }
+
+  #navbarNavSmall li a.active{
+    color: #A61F1F;
+  }
+
+  #navbarNavSmall li:hover a {
+    background-color: #BABEBF;
+    color: inherit;
+    border-radius: 25%;
+  }
+
+  #navbarNavSmall  li:hover a.active {
+    color: #A61F1F;
+  }
+
+  .navbar {
+    background-color: #D2D7D9;
+    height: 100px;
+    padding: 0;
+  }
+
+  div#title {
+    margin-left: 20px;
+  }
+}
